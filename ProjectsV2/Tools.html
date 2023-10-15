@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToolsKit</title>
+    <style>
+      body {
+        background-color: #dad8ba;
+      }
+      .headers {
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #d3d1aa;
+        display:flex;
+        justify-content:space-between;
+        align-items: flex-start;
+      }
+
+      .leftheader {
+        font-size:20px;
+        font-family:'Courier New', Courier, monospace;
+        color:black;
+      }
+
+      .rightheader {
+        font-size:20px;
+        font-family:'Courier New', Courier, monospace;
+        color:black;
+      }
+
+      .cards {
+       float:left;
+       border: solid #bdb988 2px;
+       background-color: #e6e5ca;
+       text-align:center;
+       font-family: Arial, Helvetica, sans-serif;
+       margin:10px;
+       padding:20px;
+       width: 45%;
+       border-radius: 15px;
+      }
+
+      
+
+      img {
+        width: 250px;
+        height: 300px;
+        border-radius: 15px;
+      }
+      .links {
+        text-align: center;
+      }
+
+      #dropdown, #dropdown ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    
+}
+
+#dropdown {
+    width:1000px;
+    margin: 50px auto;
+    background-color:rgb(164, 175, 112);
+    border-radius:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdown:before,
+#dropdown:after {
+    content: '';
+    display:table;
+}
+
+#dropdown:after {
+    clear:both;
+}
+
+#dropdown li {
+    float:left;
+    box-shadow: 1px 0 0 #e2a4a4;
+    position:relative;
+    
+}
+
+#dropdown a {
+    float:left;
+    padding: 10px 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#333;
+}
+
+#dropdown li:hover > a {
+    color:rgb(55, 152, 236);
+    background:#f0a4a4;
+}
+
+#dropdown ul {
+    margin: 20px 0 0 0;
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+    top:46px;
+    left:0;
+    z-index: 1;
+    background:#bde2b5;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+#dropdown li:hover > ul {
+    opacity: 1;
+    visibility:visible;
+    margin:0;
+}
+
+#dropdown ul ul {
+    top:0;
+    left:150px;
+    margin: 0 0 0 20px;
+    }
+
+#dropdown ul li {
+    float:none;
+    display:block;
+    border:0;
+    box-shadow: 0 1px 0 #111, 0 2px 0 #d87171;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dropdown ul li:last-child{
+    box-shadow: none;
+}
+
+#dropdown ul a{
+    padding: 10px;
+    width: 150px;
+    display:block;
+    white-space: nowrap;
+    float: none;
+    text-transform: uppercase;
+}
+
+#dropdown ul a:hover {
+    background-color:blue;   
+}
+
+#dropdown ul li:first-child > a{
+    border-radius: 3px 3px 0 0;
+}
+ 
+ 
+      .foot div {
+        flex: 1;
+        text-align: center;
+        color: black;
+        border-right: 1px solid rgb(150, 148, 129);
+        padding: 0;
+        margin: 0;
+        height:40px;
+        }
+
+        footer {
+        display: flex;
+        background-color: #d3d1aa;
+        padding: 0;
+        bottom: 0;
+        width: 100%;
+        height:40px;
+        position:fixed;
+        bottom:0;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+
+      #logopic {
+        width:50px;
+        height:50px;
+        margin-bottom:8px;
+        }
+
+        #name {
+        text-align: left;
+      }
+      #course {
+        text-align: center;
+      }
+      #date {
+        text-align: right;
+      }
+      footer p {
+        display: inline-block;
+        width: 30%;
+      } 
+      
+    
+    
+    </style>
+  </head>
+  <body>
+    <div class="headers">
+      <h1 class="leftheader">Tools & Kit</h1>
+      <h1 class="rightheader">Jarod and Daniels Camping Gear</h1>
+        </div>
+      </div>
+      <div>
+        <ul id="dropdown">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+          <li><a href="Pages.html">Page Index</a></li>
+          <li><a href="Categories.html">Categories</a>
+              <ul>
+                  <li><a href="SleepingGear.html">Sleeping Gear</a>
+                      <ul>
+                          <li><a href="SleepingPad.html">Sleeping Pad</a></li>
+                          <li><a href="AirMatress.html">Air Mattress</a></li>
+                          <li><a href="SleepingBag.html">Sleeping Bag</a></li>
+                          <li><a href="TopQuilt.html">Top Quilt</a></li>
+                          <li><a href="Hammock.html">Hammock</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="Bags.html">Bags</a>
+                      <ul>
+                          <li><a href="BigBag.html">85L Bag</a></li>
+                          <li><a href="SmallBag.html">65L Bag</a></li>
+                          <li><a href="Hydrate.html">Hydration Pack</a></li>
+                          <li><a href="LightBag.html">Ultralight Bag</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="Clothes.html">Clothing</a>
+                      <ul>
+                          <li><a href="Jacket.html">Puffer Jacket</a></li>
+                          <li><a href="Fleece.html">Fleece Clothing</a></li>
+                          <li><a href="Boots.html">Hiking Boots</a></li>
+                          <li><a href="Toque.html">Toque</a></li>
+                          <li><a href="Wool.html">Wool Socks</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="Shelters.html">Shelters</a>
+                      <ul>
+                          <li><a href="Family.html">Family Tent</a></li>
+                          <li><a href="Ultra.html">Ultralight Tent</a></li>
+                          <li><a href="Tarp.html">Tarps</a></li>
+                          <li><a href="Bivvy.html">Bivvy Bag</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="Tools.html">Tools and Kit</a>
+                      <ul>
+                          <li><a href="Stove.html">Gas Stove</a></li>
+                          <li><a href="Saw.html">Folding Saw</a></li>
+                          <li><a href="Hatchet.html">Hatchet</a></li>
+                          <li><a href="Filter.html">Water Filtration</a></li>
+                          <li><a href="Cook.html">Cooking Set</a></li>
+                          <li><a href="Bushcraft.html">Bushcraft Knife</a></li>
+                          <li><a href="Fire.html">Fire Starters</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        </div>  
+
+    <div class="cardcontainer">
+        <div class="cards">
+          <div>
+            <img src="Images/stove.jpg" alt="Camp stove" />
+            <a href="Stove.html"><p>Gas Stove</p></a>
+            <p>Makes cooking in the woods a breeze</p>
+          </div>
+        </div>
+    
+
+   
+        <div class="cards">
+          <div>
+            <img src="Images/saw.webp" alt="Folding saw" />
+            <a href="Saw.html"><p>Folding Saw</p></a>
+            <p>Can process wood very quickly for a fire</p>
+          </div>
+        </div>
+    
+
+    
+        <div class="cards">
+          <div>
+            <img src="Images/hatchet.webp" alt="Hatchet" />
+            <a href="Hatchet.html"><p>Hatchet</p></a>
+            <p>For processing wood in many different things, including a fire</p>
+          </div>
+        </div>
+    
+
+    
+        <div class="cards">
+          <div>
+            <img src="Images/filter.jpg" alt="Water filter bag" />
+            <a href="Filter.html"><p>Water Filtration</p></a>
+            <p>A necessity for survival, allows you to turn any puddle into drinkable water</p>
+          </div>
+        </div>
+
+        <div class="cards">
+            <div>
+              <img src="Images/cooking.jpg" alt="Cook set" />
+              <a href="Cook.html"><p>Cooking Set</p></a>
+              <p>An absolute must for anyone who cant stand MRE's</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div>
+              <img src="Images/lighter.jpg" alt="Lighter"/>
+              <a href="Fire.html"><p>Fire Starters</p></a>
+              <p>There's many different fire starters, but ol' reliable will always be a bic lighter</p>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div>
+              <img src="Images/knife.jpg" alt="Knife" />
+              <a href=""><p>Bushcraft Knife</p></a>
+              <p>A strong knife to survive the inevitable beatings it will take</p>
+            </div>
+          </div>
+
+      </div>
+
+      <footer>
+        <p id="name">Daniel Wilson <br>Jarod Jardine</p>
+        <p id="course">Web Design</p>
+        <p id="date">Oct 13 2020</p>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Naviagtion Menu Proto-type</title>
+    <style>
+
+body {
+    background:#333;
+    font-size:14px;
+}
+
+#dropdown, #dropdown ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+#dropdown {
+    width:900px;
+    margin: 50px auto;
+    background-color:rgb(238, 230, 230);
+    border-radius:6px;
+}
+
+#dropdown:before,
+#dropdown:after {
+    content: '';
+    display:table;
+}
+
+#dropdown:after {
+    clear:both;
+}
+
+#dropdown li {
+    float:left;
+    box-shadow: 1px 0 0 #e2a4a4;
+    position:relative;
+}
+
+#dropdown a {
+    float:left;
+    padding: 10px 32px;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    color:#333;
+}
+
+#dropdown li:hover > a {
+    color:rgb(55, 152, 236);
+    background:#f0a4a4;
+}
+
+#dropdown ul {
+    margin: 20px 0 0 0;
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+    top:46px;
+    left:0;
+    z-index: 1;
+    background:#bde2b5;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+#dropdown li:hover > ul {
+    opacity: 1;
+    visibility:visible;
+    margin:0;
+}
+
+#dropdown ul ul {
+    top:0;
+    left:150px;
+    margin: 0 0 0 20px;
+    }
+
+#dropdown ul li {
+    float:none;
+    display:block;
+    border:0;
+    box-shadow: 0 1px 0 #111, 0 2px 0 #d87171;
+}
+
+#dropdown ul li:last-child{
+    box-shadow: none;
+}
+
+#dropdown ul a{
+    padding: 10px;
+    width: 130px;
+    display:block;
+    white-space: nowrap;
+    float: none;
+    text-transform: uppercase;
+}
+
+#dropdown ul a:hover {
+    background-color:blue;   
+}
+
+#dropdown ul li:first-child > a{
+    border-radius: 3px 3px 0 0;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <ul id="dropdown">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Page Index</a></li>
+        <li><a href="#">Categories</a>
+            <ul>
+                <li><a href="#">Sleeping Gear</a>
+                    <ul>
+                        <li><a href="#">Sleeping Pad</a></li>
+                        <li><a href="#">Air Mattress</a></li>
+                        <li><a href="#">Sleeping Bag</a></li>
+                        <li><a href="#">Top Quilt</a></li>
+                        <li><a href="#">Hammock</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bags</a>
+                    <ul>
+                        <li><a href="#">85L Bag</a></li>
+                        <li><a href="#">65L Bag</a></li>
+                        <li><a href="#">Hydration Pack</a></li>
+                        <li><a href="#">Ultralight Bag</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Clothing</a>
+                    <ul>
+                        <li><a href="#">Puffer Jacket</a></li>
+                        <li><a href="#">Fleece Clothing</a></li>
+                        <li><a href="#">Hiking Boots</a></li>
+                        <li><a href="#">Toque</a></li>
+                        <li><a href="#">Wool Socks</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shelters</a>
+                    <ul>
+                        <li><a href="#">Family Tent</a></li>
+                        <li><a href="#">Ultralight Tent</a></li>
+                        <li><a href="#">Tarps</a></li>
+                        <li><a href="#">Bivvy Bag</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tools and Kit</a>
+                    <ul>
+                        <li><a href="#">Gas Stove</a></li>
+                        <li><a href="#">Folding Saw</a></li>
+                        <li><a href="#">Hatchet</a></li>
+                        <li><a href="#">Water Filtration</a></li>
+                        <li><a href="#">Cooking Set</a></li>
+                        <li><a href="#">Bushcraft Knife</a></li>
+                        <li><a href="#">Fire Starters</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

@@ -13,22 +13,22 @@
         font-size: 14px;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #d3d1aa;
+        background-color: rgb(58, 58, 58);
+        color:white;
         display:flex;
         justify-content:space-between;
         align-items: flex-start;
       }
-
       .leftheader {
         font-size:20px;
         font-family:'Courier New', Courier, monospace;
-        color:black;
+        color:white;
       }
 
       .rightheader {
         font-size:20px;
         font-family:'Courier New', Courier, monospace;
-        color:black;
+        color:white;
       }
 
       .cards {
@@ -59,13 +59,14 @@
     margin:0;
     padding:0;
     list-style: none;
-    
 }
 
+
+/* Controls main color of Nav-Bar */
 #dropdown {
     width:1000px;
     margin: 50px auto;
-    background-color:rgb(164, 175, 112);
+    background-color:rgb(0, 0, 0);
     border-radius:6px;
     display: flex;
     justify-content: center;
@@ -81,27 +82,27 @@
 #dropdown:after {
     clear:both;
 }
-
+/* Controls the space between the Nav-Bar icons */
 #dropdown li {
     float:left;
-    box-shadow: 1px 0 0 #e2a4a4;
+    box-shadow: 1px 0 0 rgb(105, 105, 105);
     position:relative;
     
 }
-
+/* Controls Nav-Bar text and color */
 #dropdown a {
     float:left;
     padding: 10px 32px;
     text-transform: uppercase;
     text-decoration: none;
-    color:#333;
+    color:#ffffff;
 }
-
+/* Controls hover color and background color when hovering to the right */
 #dropdown li:hover > a {
-    color:rgb(55, 152, 236);
-    background:#f0a4a4;
+    color:rgb(255, 252, 252);
+    background:rgb(58, 58, 58);
 }
-
+/* Controls color of dropdown lists */
 #dropdown ul {
     margin: 20px 0 0 0;
     opacity:0;
@@ -110,7 +111,7 @@
     top:46px;
     left:0;
     z-index: 1;
-    background:#bde2b5;
+    background:rgb(58, 58, 58);
     border-radius: 3px;
     transition: all .3s ease-in-out;
 }
@@ -126,12 +127,12 @@
     left:150px;
     margin: 0 0 0 20px;
     }
-
+/* Controls the color of the spaces between the dropdowns */
 #dropdown ul li {
     float:none;
     display:block;
     border:0;
-    box-shadow: 0 1px 0 #111, 0 2px 0 #d87171;
+    box-shadow: 0 1px 0 rgb(105, 105, 105), 0 2px 0 rgb(105, 105, 105);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -147,9 +148,9 @@
     float: none;
     text-transform: uppercase;
 }
-
+/* Controls color of dropdown menu when hovered */
 #dropdown ul a:hover {
-    background-color:blue;   
+    background-color:rgb(179, 178, 178);   
 }
 
 #dropdown ul li:first-child > a{
@@ -161,16 +162,16 @@
       .foot div {
         flex: 1;
         text-align: center;
-        color: black;
+        color: white;
         border-right: 1px solid rgb(150, 148, 129);
         padding: 0;
         margin: 0;
         height:40px;
         }
-
-        footer {
+ footer {
         display: flex;
-        background-color: #d3d1aa;
+        background-color: rgb(58, 58, 58);
+        color:white;
         padding: 0;
         bottom: 0;
         width: 100%;
@@ -306,7 +307,7 @@
         <div class="cards">
           <div>
             <img src="Images/categoryclothes.JPG" alt="Man hiking looking mad drippy" />
-            <a href="Clothing.html"><h1>Clothing</h1></a>
+            <a href="Clothes.html"><h1>Clothing</h1></a>
             <a href="Jacket.html"><p>Puffer Jacket</p></a>
             <a href="Fleece.html"><p>Fleece Clothing</p></a>
             <a href="Boots.html"><p>Hiking Boots</p></a>
@@ -324,7 +325,7 @@
             <a href="Family.html"><p>Family Tent</p></a>
             <a href="Ultra.html"><p>Ultralight Tent</p></a>
             <a href="Tarp.html"><p>Tarps</p></a>
-            <a href="Bivvy.html"><p>Bivvy Bag</p></a>
+            <a href="Bivvy.html"></a><p>Bivvy Bag</p>
           </div>
         </div>
       

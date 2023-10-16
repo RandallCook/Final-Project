@@ -48,11 +48,11 @@
     list-style: none;
     
 }
-
+/* Controls main color of Nav-Bar */
 #dropdown {
     width:1000px;
     margin: 50px auto;
-    background-color:rgb(164, 175, 112);
+    background-color:rgb(0, 0, 0);
     border-radius:6px;
     display: flex;
     justify-content: center;
@@ -68,27 +68,27 @@
 #dropdown:after {
     clear:both;
 }
-
+/* Controls the space between the Nav-Bar icons */
 #dropdown li {
     float:left;
-    box-shadow: 1px 0 0 #e2a4a4;
+    box-shadow: 1px 0 0 rgb(105, 105, 105);
     position:relative;
     
 }
-
+/* Controls Nav-Bar text and color */
 #dropdown a {
     float:left;
     padding: 10px 32px;
     text-transform: uppercase;
     text-decoration: none;
-    color:#333;
+    color:#ffffff;
 }
-
+/* Controls hover color and background color when hovering to the right */
 #dropdown li:hover > a {
-    color:rgb(55, 152, 236);
-    background:#f0a4a4;
+    color:rgb(255, 252, 252);
+    background:rgb(58, 58, 58);
 }
-
+/* Controls color of dropdown lists */
 #dropdown ul {
     margin: 20px 0 0 0;
     opacity:0;
@@ -97,7 +97,7 @@
     top:46px;
     left:0;
     z-index: 1;
-    background:#bde2b5;
+    background:rgb(58, 58, 58);
     border-radius: 3px;
     transition: all .3s ease-in-out;
 }
@@ -113,12 +113,12 @@
     left:150px;
     margin: 0 0 0 20px;
     }
-
+/* Controls the color of the spaces between the dropdowns */
 #dropdown ul li {
     float:none;
     display:block;
     border:0;
-    box-shadow: 0 1px 0 #111, 0 2px 0 #d87171;
+    box-shadow: 0 1px 0 rgb(105, 105, 105), 0 2px 0 rgb(105, 105, 105);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -134,9 +134,9 @@
     float: none;
     text-transform: uppercase;
 }
-
+/* Controls color of dropdown menu when hovered */
 #dropdown ul a:hover {
-    background-color:blue;   
+    background-color:rgb(179, 178, 178);   
 }
 
 #dropdown ul li:first-child > a{
@@ -239,7 +239,8 @@
 
         <div class="nav">
           <ul id="dropdown">
-            <li><a href="Home.html">Home</a></li>
+            <li><a href="index.html
+">Home</a></li>
             <li><a href="Feedback.html">Feedback</a></li>
             <li><a href="Pages.html">Page Index</a></li>
             <li><a href="Categories.html">Categories</a>
@@ -255,8 +256,11 @@
                     </li>
                     <li><a href="Bags.html">Bags</a>
                         <ul>
-                            <li><a href="BigBag.html">85L Bag</a></li>
-                            <li><a href="SmallBag.html">65L Bag</a></li>
+                            <li><a href="85LBag.html">85L Bag</a></li>
+
+
+                            <li><a href="65LBag.html">65L Bag</a></li>
+
                             <li><a href="Hydrate.html">Hydration Pack</a></li>
                             <li><a href="LightBag.html">Ultralight Bag</a></li>
                         </ul>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <style>
+      body {
+        background-color:  #018f88;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+      }
+      .headers {
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(58, 58, 58);
+        color:white;
+        display:flex;
+        justify-content:space-between;
+        align-items: flex-start;
+      }
+      .leftheader {
+        font-size:20px;
+        color:white;
+      }
+
+      .rightheader {
+        font-size:20px;
+        color:white;
+      }
+
+      img {
+        width: 100%;
+        height: 90%;
+        
+        margin:auto;
+        filter: blur(8px);
+      }
+      .links {
+        text-align: center;
+      }
+
+      #dropdown, #dropdown ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    
+}
+/* Controls main color of Nav-Bar */
+#dropdown {
+    width:1000px;
+    margin: 50px auto;
+    background-color:rgb(0, 0, 0);
+    border-radius:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdown:before,
+#dropdown:after {
+    content: '';
+    display:table;
+}
+
+#dropdown:after {
+    clear:both;
+}
+/* Controls the space between the Nav-Bar icons */
+#dropdown li {
+    float:left;
+    box-shadow: 1px 0 0 rgb(105, 105, 105);
+    position:relative;
+    
+}
+/* Controls Nav-Bar text and color */
+#dropdown a {
+    float:left;
+    padding: 10px 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Controls hover color and background color when hovering to the right */
+#dropdown li:hover > a {
+    color:rgb(255, 252, 252);
+    background:rgb(58, 58, 58);
+}
+/* Controls color of dropdown lists */
+#dropdown ul {
+    margin: 20px 0 0 0;
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+    top:46px;
+    left:0;
+    z-index: 1;
+    background:rgb(58, 58, 58);
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+#dropdown li:hover > ul {
+    opacity: 1;
+    visibility:visible;
+    margin:0;
+}
+
+#dropdown ul ul {
+    top:0;
+    left:150px;
+    margin: 0 0 0 20px;
+    }
+/* Controls the color of the spaces between the dropdowns */
+#dropdown ul li {
+    float:none;
+    display:block;
+    border:0;
+    box-shadow: 0 1px 0 rgb(105, 105, 105), 0 2px 0 rgb(105, 105, 105);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dropdown ul li:last-child{
+    box-shadow: none;
+}
+
+#dropdown ul a{
+    padding: 10px;
+    width: 150px;
+    display:block;
+    white-space: nowrap;
+    float: none;
+    text-transform: uppercase;
+}
+/* Controls color of dropdown menu when hovered */
+#dropdown ul a:hover {
+    background-color:rgb(179, 178, 178);   
+}
+
+#dropdown ul li:first-child > a{
+    border-radius: 3px 3px 0 0;
+}
+ 
+      .foot div {
+        flex: 1;
+        text-align: center;
+        color: white;
+        border-right: 1px solid rgb(150, 148, 129);
+        padding: 0;
+        margin: 0;
+        height:40px;
+        }
+ footer {
+        display: flex;
+        background-color: rgb(58, 58, 58);
+        color:white;
+        padding: 0;
+        bottom: 0;
+        width: 100%;
+        height:40px;
+        position:fixed;
+        bottom:0;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+
+      #logopic {
+        width:50px;
+        height:50px;
+        margin-bottom:8px;
+        }
+
+      #name {
+        text-align: left;
+		font-family:Arial, Helvetica, sans-serif;
+      }
+      #course {
+        text-align: center;
+		font-family:Arial, Helvetica, sans-serif;
+      }
+      #date {
+        text-align: right;
+		font-family:Arial, Helvetica, sans-serif;
+      }
+      footer p {
+        display: inline-block;
+        width: 30%;
+      }
+      .centerhead {
+        text-align:center;
+        font-size: xx-large;
+        color: rgb(14, 48, 0);
+        
+      }
+      .headcenter {
+        text-align:center;
+        font-size:large;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        color: white;
+      }
+      .nav , .nav *{
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      
+        
+      
+      .header-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+}
+
+.headcenter {
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin: 0; 
+  position: relative;
+  bottom:  400px;
+  left: 230px;
+  font-weight: bold;
+}
+.feedback {
+    background-color: rgb(157, 249, 249);
+    width: 75%;
+    height: 100%;
+    border-radius: 15px;
+    text-align: center;
+}
+#comments {
+  width: 40%;
+  line-height: 4;
+  vertical-align: top;
+  word-wrap: break-word;
+  text-align: left;
+  top: 0;
+  float:right;
+  margin-right: 10%; 
+  overflow: scroll;
+}
+.row {
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+  
+}
+label {
+  margin-left: 10%;
+  
+}
+select {
+  
+} 
+
+
+
+
+
+    
+    
+    </style>
+  </head>
+  <body>
+    <div class="headers">
+      <h1 class="leftheader">Home</h1>
+      <h1 class="rightheader">Jarod and Daniels Camping Gear</h1>
+        </div>
+        
+
+        <div class="nav">
+          <ul id="dropdown">
+            <li><a href="index.html
+">Home</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="Pages.html">Page Index</a></li>
+            <li><a href="Categories.html">Categories</a>
+                <ul>
+                    <li><a href="SleepingGear.html">Sleeping Gear</a>
+                        <ul>
+                            <li><a href="SleepingPad.html">Sleeping Pad</a></li>
+                            <li><a href="AirMatress.html">Air Mattress</a></li>
+                            <li><a href="SleepingBag.html">Sleeping Bag</a></li>
+                            <li><a href="TopQuilt.html">Top Quilt</a></li>
+                            <li><a href="Hammock.html">Hammock</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Bags.html">Bags</a>
+                        <ul>
+                            <li><a href="85LBag.html">85L Bag</a></li>
+
+
+                            <li><a href="65LBag.html">65L Bag</a></li>
+
+                            <li><a href="Hydrate.html">Hydration Pack</a></li>
+                            <li><a href="LightBag.html">Ultralight Bag</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Clothes.html">Clothing</a>
+                        <ul>
+                            <li><a href="Jacket.html">Puffer Jacket</a></li>
+                            <li><a href="Fleece.html">Fleece Clothing</a></li>
+                            <li><a href="Boots.html">Hiking Boots</a></li>
+                            <li><a href="Toque.html">Toque</a></li>
+                            <li><a href="Wool.html">Wool Socks</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Shelters.html">Shelters</a>
+                        <ul>
+                            <li><a href="Family.html">Family Tent</a></li>
+                            <li><a href="Ultra.html">Ultralight Tent</a></li>
+                            <li><a href="Tarp.html">Tarps</a></li>
+                            <li><a href="Bivvy.html">Bivvy Bag</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Tools.html">Tools and Kit</a>
+                        <ul>
+                            <li><a href="Stove.html">Gas Stove</a></li>
+                            <li><a href="Saw.html">Folding Saw</a></li>
+                            <li><a href="Hatchet.html">Hatchet</a></li>
+                            <li><a href="Filter.html">Water Filtration</a></li>
+                            <li><a href="Cook.html">Cooking Set</a></li>
+                            <li><a href="Bushcraft.html">Bushcraft Knife</a></li>
+                            <li><a href="Fire.html">Fire Starters</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+          </div>  
+    
+  <div class="header-page">
+    <div class="feedback">
+        <form>
+            <h1>Your feedback is important to us!</h1>
+            <p>Please take the time to leave a comment about a page and leave a rating!</p>
+            <div class="row">
+            <label for="SleepingGear">Sleeping Gear</label>
+            <select id="SleepingGear" name="SleepingGear">
+            <option value="SleepingPad">Sleeping Pad</option>
+            <option value="SleepingBag">Sleeping Bag</option>
+            <option value="AirMattress">Air Mattress</option>
+            <option value="TopQuilt">Top Quilt</option>
+            <option value="Hammock">Hammock</option>
+            </select>
+            <input type="text" id="comments" placeholder="Comments">
+            </div>
+            <div class="row">
+            <label for="Bags">Bags</label>
+            <select id="Bags" name="Bags">
+            <option value="85LBag">85L Bag</option>
+            <option value="65LBag">65L Bag</option>
+            <option value="Hydration">Hydration pack</option>
+            <option value="UltralightBag">Ultralight Bag</option>
+            </select>
+            <input type="text" id="comments" placeholder="Comments">
+            </div>
+            <div class="row">
+            <label for="Clothing">Clothing</label>
+            <select id="Clothing" name="Clothing">
+            <option value="PuffyJacket">Puffy Jacket</option>
+            <option value="Fleece">Fleece</option>
+            <option value="HikingBoots">Hiking Boots</option>
+            <option value="Toque">Toque</option>
+            <option value="WoolSocks">Wool Socks</option>
+            </select>
+            <input type="text" id="comments" placeholder="Comments">
+            </div>
+            <div class="row">
+              <label for="Shelters">Shelters</label>
+              <select id="Shelters" name="Shelters">
+              <option value="FamilyTent">Family Tent</option>
+              <option value="UltralightTent">Ultralight Tent</option>
+              <option value="Tarp">Tarp</option>
+              <option value="Bivvy">Bivvy</option>
+              </select>
+              <input type="text" id="comments" placeholder="Comments">
+              </div>
+              <div class="row">
+                <label for="Clothing">Clothing</label>
+                <select id="Clothing" name="Clothing">
+                <option value="PuffyJacket">Puffy Jacket</option>
+                <option value="Fleece">Fleece</option>
+                <option value="HikingBoots">Hiking Boots</option>
+                <option value="Toque">Toque</option>
+                <option value="WoolSocks">Wool Socks</option>
+                </select>
+                <input type="text" id="comments" placeholder="Comments">
+                </div>
+                <div class="row">
+                  <label for="Tools">Tools and kit</label>
+                  <select id="Tools" name="Tools">
+                  <option value="Stove">Stove</option>
+                  <option value="Saw">Saw</option>
+                  <option value="Hatchet">Hatchet</option>
+                  <option value="Filter">Filter</option>
+                  <option value="Cookset">Cooking set</option>
+                  <option value="FireStarter">Fire Starter</option>
+                  <option value="BushcraftKnife">Bushcraft Knife</option>
+                  </select>
+                  <input type="text" id="comments" placeholder="Comments">
+                  </div>
+                  <label for="rating">How Would you rate our website out of 5?</label>
+                  <input type="range" id="rating" name="rating" min="1" max="5">
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+
+        <footer>
+          <p id="name">Daniel Wilson <br>Jarod Jardine</p>
+          <p id="course">Web Design</p>
+          <p id="date">Oct 13 2020</p>
+      </footer>
+  </body>
+</html>
